@@ -2,6 +2,9 @@
 # This file is for Kat! It's used to automate pushing files to the live website.
 cd kyvera.net
 
+git checkout gh-pages
+git reset --hard main
+
 git add .
 git restore --staged run.bat
 git restore --staged run.command
