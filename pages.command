@@ -12,11 +12,14 @@ read -r commentDEV
 git commit -m "$commentDEV"
 git push origin main
 
+# for gh-pages/live branch
+# switches to the live branch and then copies the main branch
 git fetch origin
 git checkout gh-pages
 git pull origin gh-pages
 git reset --hard origin/main
 
+# branch cleanup before commit
 git rm main.command
 git rm pages.command
 git rm run.bat
@@ -24,6 +27,7 @@ git rm run.command
 git add .
 git rm .gitignore
 
+# commit and switch back to main branch
 echo "Enter comment for gh-pages/live branch:"
 read -r commentLIVE
 git commit -m "$commentLIVE"
