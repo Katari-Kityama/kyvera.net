@@ -7,13 +7,15 @@ git checkout gh-pages
 git pull origin gh-pages
 git reset --hard origin/main
 
+git rm main.command
+git rm pages.command
+git rm run.bat
+git rm run.command
 git add .
-git restore --staged run.bat
-git restore --staged run.command
-git restore --staged pages.command
-git restore --staged .gitignore
+git rm .gitignore
 
 echo "Enter comment:"
 read -r comment
 git commit -m "$comment"
-git push origin gh-pages --force 
+git push origin gh-pages --force
+git checkout main 
