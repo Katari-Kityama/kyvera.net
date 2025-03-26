@@ -1,0 +1,73 @@
+body {
+  display: flex;
+   justify-content: center;
+    align-items: center;
+     height: 100vh;
+      background-color: #1e1e1e;
+       font-family: Arial, sans-serif;
+        color: white;
+         margin: 0;
+}
+
+  .kyvera-container {
+      background: #2a2a2a;
+          padding: 20px;
+              border-radius: 10px;
+                  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+                      width: 300px;
+                          text-align: center;
+}
+
+  .title {
+    font-size: 24px;
+     font-weight: bold;
+      margin-bottom: 10px;
+       border-bottom: 2px solid white;
+      padding-bottom: 5px;}
+
+
+     .divider {
+       border-bottom: 1px solid white;
+        margin: 10px 0;
+}
+
+ .link-container {
+   display: flex;
+    justify-content: space-between;
+     gap: 10px;
+}
+
+  .info1, .subspecies {
+    display: flex;
+     flex-direction: column;
+      gap: 8px;
+       width: 50%;
+}
+
+  button {
+   background-color: #1e1e1e;
+    color: #66ccff;
+     border: 2px solid #66ccff;
+      padding: 8px 16px; 
+       font-size: 16px;
+        cursor: pointer;
+         border-radius: 5px;
+          transition: 0.3s;
+            white-space: nowrap; 
+              width: auto; 
+               min-width: 140px; 
+                text-align: center;
+}
+
+  button:hover {
+   background-color: #484848;
+    color: white;
+     border-color: white;
+}
+
+ .subspecies button:first-child {
+   text-decoration: underline;
+    text-decoration-color: white;
+     text-decoration-thickness: 5px;
+      text-underline-offset: 4px;
+}

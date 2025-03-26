@@ -1,0 +1,50 @@
+body {
+ font-family: Arial, sans-serif;
+  margin: 0;
+   padding: 0;
+    background-color: #121212; 
+     display: flex;
+      justify-content: center;
+      align-items: center;
+                         }
+
+ .container {
+   width: 50%;
+     background: #1e1e1e; 
+         padding: 30px;
+         border-radius: 12px;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            
+            color: white;
+}
+
+.title {
+ font-size: 25px;
+}
+
+    .devdivider {
+        width: 60px;
+            height: 4px;
+                margin: 15px auto;
+                                 }
+
+.kyvbox {
+  display: flex;
+   align-items: center;
+    background: #252525; 
+     padding: 20px;
+    
+       margin-bottom: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+                                               }
+
+
+.kyvbox img {
+    width: 42%; 
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 10px;
+                       }
+
+     
+
