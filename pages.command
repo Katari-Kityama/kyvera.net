@@ -2,8 +2,10 @@
 # This file is for Kat! It's used to automate pushing files to the live website.
 cd kyvera.net
 
+git fetch origin
 git checkout gh-pages
-git reset --hard main
+git pull origin gh-pages
+git reset --hard origin/main
 
 git add .
 git restore --staged run.bat
@@ -14,4 +16,4 @@ git restore --staged .gitignore
 echo "Enter comment:"
 read -r comment
 git commit -m "$comment"
-git push origin gh-pages 
+git push origin gh-pages --force 
