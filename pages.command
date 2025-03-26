@@ -1,6 +1,16 @@
 #!/bin/bash
 # This file is for Kat! It's used to automate pushing files to the live website.
+
+# set working directory if not already in working directory
 cd kyvera.net
+
+# for main branch
+git add .
+
+echo "Enter comment for main/dev branch:"
+read -r commentDEV
+git commit -m "$commentDEV"
+git push origin main
 
 git fetch origin
 git checkout gh-pages
@@ -14,8 +24,8 @@ git rm run.command
 git add .
 git rm .gitignore
 
-echo "Enter comment:"
-read -r comment
-git commit -m "$comment"
+echo "Enter comment for gh-pages/live branch:"
+read -r commentLIVE
+git commit -m "$commentLIVE"
 git push origin gh-pages --force
 git checkout main 
