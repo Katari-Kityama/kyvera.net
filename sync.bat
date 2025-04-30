@@ -6,6 +6,7 @@ cd kyvera.net
 
 REM Sync with REPO
 git fetch origin
+git merge origin/main
 
 REM Add all changes to Git
 git add .
