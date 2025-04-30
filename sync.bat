@@ -15,3 +15,5 @@ git pull
 
 REM Commit with the message
 git commit -m "%comment%"
+
+REM cheese
