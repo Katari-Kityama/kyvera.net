@@ -6,6 +6,7 @@ cd kyvera.net
 
 # Sync with REPO
 git fetch origin
+git merge origin/main
 
 # Stage all changes
 git add .
