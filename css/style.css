@@ -12,11 +12,11 @@ body {
   .kyvera-container {
       background: #2a2a2a;
           padding: 20px;
+           border: 1px solid #ffffff;
               border-radius: 10px;
                   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
                       width: 300px;
                           text-align: center;
-                           border-block-color: white
 }
 
   .title {
@@ -47,8 +47,8 @@ body {
 
   button {
    background-color: #1e1e1e;
-    color: #66ccff;
-     border: 2px solid #66ccff;
+    color: #ffffff;
+     border: 2px solid #ffffff;
       padding: 8px 16px; 
        font-size: 16px;
         cursor: pointer;
