@@ -10,6 +10,7 @@ git add .
 echo "Enter comment for main/dev branch:"
 read -r commentDEV
 git commit -m "$commentDEV"
+git pull
 git push origin main
 
 # for gh-pages/live branch

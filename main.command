@@ -8,4 +8,5 @@ git add .
 echo "Enter comment:"
 read -r comment
 git commit -m "$comment"
+git pull
 git push origin main 
