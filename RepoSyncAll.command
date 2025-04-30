@@ -11,7 +11,7 @@ git merge origin/main
 git add .
 
 # Commit and push changes
-echo "Enter comment:"
+echo -e "\033[94mEnter comment:\033[94m"
 read -r comment
 git commit -m "$comment"
 git push origin main 

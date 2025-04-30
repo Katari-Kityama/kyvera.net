@@ -12,7 +12,7 @@ git merge origin/main
 git add .
 
 # Commit and push changes
-echo "Enter comment:"
+echo -e "\033[94mEnter comment for main branch:\033[94m"
 read -r comment
 git commit -m "$comment"
 git push origin main 
@@ -35,7 +35,7 @@ git add .
 git rm .gitignore
 
 # commit and switch back to main branch
-echo "Enter comment for gh-pages/live branch:"
+echo "\033[94mEnter comment for gh-pages/live branch:\033[94m"
 read -r commentLIVE
 git commit -m "$commentLIVE"
 git push origin gh-pages --force
