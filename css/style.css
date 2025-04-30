@@ -16,6 +16,7 @@ body {
                   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
                       width: 300px;
                           text-align: center;
+                           border-block-color: white
 }
 
   .title {
@@ -64,6 +65,7 @@ body {
     color: white;
      border-color: white;
 }
+<<<<<<< HEAD
 
  .subspecies button:first-child {
    text-decoration: underline;
@@ -73,3 +75,5 @@ body {
 }
 
 /* xd xd
+=======
+>>>>>>> 182476c0d9a62f231f641cfa479d78a76b663f9a
