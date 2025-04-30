@@ -21,10 +21,14 @@ git pull origin gh-pages
 git reset --hard origin/main
 
 # branch cleanup before commit
-git rm main.command
 git rm pages.command
+git rm main.command
+git rm main.bat
+git rm sync.bat
+git rm sync.command
 git rm run.bat
 git rm run.command
+
 git add .
 git rm .gitignore
 
