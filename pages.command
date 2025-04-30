@@ -4,14 +4,17 @@
 # set working directory if not already in working directory
 cd kyvera.net
 
-# for main branch
+# Sync with REPO
+git fetch origin
+
+# Stage all changes
 git add .
 
-echo "Enter comment for main/dev branch:"
-read -r commentDEV
-git commit -m "$commentDEV"
-git pull
-git push origin main
+# Commit and push changes
+echo "Enter comment:"
+read -r comment
+git commit -m "$comment"
+git push origin main 
 
 # for gh-pages/live branch
 # switches to the live branch and then copies the main branch

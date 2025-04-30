@@ -3,9 +3,9 @@
 # set working directory if not already in working directory
 cd kyvera.net
 
+git fetch origin
 git add .
 
 echo "Enter comment:"
 read -r comment
 git commit -m "$comment"
-git pull
