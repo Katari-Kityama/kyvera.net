@@ -27,3 +27,4 @@ git commit -m "%comment%"
 
 REM Push to main branch
 git push origin main
+pause 
