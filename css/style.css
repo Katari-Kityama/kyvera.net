@@ -29,6 +29,7 @@ body {
      .divider {
        border-bottom: 2px solid white;
         margin: 10px 0;
+        margin-bottom: 20px;
 }
 
  .link-container {
