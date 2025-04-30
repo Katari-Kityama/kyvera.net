@@ -12,7 +12,7 @@ git merge origin/main
 git add .
 
 # Commit and push changes
-echo -e "\033[94mEnter comment for main branch:\033[94m"
+echo -e "\033[94mEnter comment for main branch:\033[0m"
 read -r comment
 git commit -m "$comment"
 git push origin main 
