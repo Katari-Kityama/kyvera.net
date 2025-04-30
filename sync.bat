@@ -15,7 +15,3 @@ git pull
 
 REM Commit with the message
 git commit -m "%comment%"
-
-REM Push to main branch
-git push origin main
-pause 
