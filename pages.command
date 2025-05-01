@@ -35,7 +35,7 @@ git add .
 git rm .gitignore
 
 # commit and switch back to main branch
-echo "\033[94mEnter comment for gh-pages/live branch:\033[94m"
+echo -e "\033[94mEnter comment for gh-pages/live branch:\033[0m"
 read -r commentLIVE
 git commit -m "$commentLIVE"
 git push origin gh-pages --force
