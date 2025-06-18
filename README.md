@@ -3,6 +3,8 @@ This website is going to be solely coded by Katari Kityama during the time I am 
 
 For teachers, graders, or TA's, I'm going to be recreating what little existed of this website and more using the knowledge I have gained in my class. 
 
+The site-plan.html file will be the first file to adopt my new website's design. 
+
 # kyvera.net
 ### Kyvera website in development! 
 ##### To devs: 
