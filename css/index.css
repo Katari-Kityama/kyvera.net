@@ -1,0 +1,138 @@
+#content {
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    display: grid;
+    grid-template-columns: 60% 0.1% 40%;
+    grid-template-rows: 1fr 80% 1fr;
+}
+
+.upperleft {
+    padding: 10px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0px;
+    text-align: center;
+}
+
+.upperright {
+    padding: 20px;
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.left {
+    padding: 0px 5% 0px 5%;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.vertical_divider {
+    width: 100%;
+    background-color: #20c1ae;
+    margin: 0;
+    height: 100%;
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+}
+
+.right {
+    padding: 0px 20px 0px 20px;
+    grid-column: 3;
+    grid-row: 2;
+    height: 100%;
+    width: auto;
+
+    align-items: center;
+    text-align: center;
+}
+
+.kyvera_container {
+    position: relative;
+    height: 100%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#kyvera_image {
+    height: 100%;
+}
+
+#detectors {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(30, 1fr);
+}
+
+.kyvera_image_button:hover {
+    border: 1px solid #20c1ae;
+}
+
+#head {
+    grid-column: 5/11;
+    grid-row: 3/9;
+}
+
+#paw_r {
+    grid-column: 5/9;
+    grid-row: 25/28;
+}
+
+#paw_l {
+    grid-column: 12/16;
+    grid-row: 26/30;
+}
+
+#chest {
+    grid-column: 5/10;
+    grid-row: 9/14;
+}
+
+#leg_r {
+    grid-column: 5/10;
+    grid-row: 18/25;
+}
+
+#leg_l {
+    grid-column: 9/15;
+    grid-row: 17/27;
+}
+
+#tail {
+    grid-column: 9/18;
+    grid-row: 11/18;
+}
+
+#hip {
+    grid-column: 6/12;
+    grid-row: 14/19;
+}
+
+#hand_r {
+    grid-column: 4/7;
+    grid-row: 17/20;
+}
+
+#hand_l {
+    grid-column: 16/20;
+    grid-row: 8/11;
+}
+
+#tail_tip {
+    grid-column: 17/20;
+    grid-row: 14/17;
+}

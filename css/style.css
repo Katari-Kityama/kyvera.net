@@ -1,68 +1,20 @@
+/* General styling for all pages. I will make more use of this later when my website is not so monolithic. */
+/*   Folly red: #fe334a */
+/*   Minty green: #20c1ae */
+
+html {
+    height: 100%;
+    overflow-x: hidden;
+}
+
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #070606;
-  font-family: Arial, sans-serif;
-  color: white;
-  margin: 0;
-}
+    background-color: #040a0a;
+    width: 100%;
+    height: 100%;
+    margin: 0px; 
+    padding: 0px;
 
-.home-container {
-  background: #0a0a0a;
-  padding: 20px;
-  border: 2px solid #ffffff;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  width: 300px;
-}
-
-.title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
-  text-align: center;
-}
-
-.divider {
-  border-bottom: 2px solid white;
-  margin: 10px 0 20px;
-}
-
-.link-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.info1,
-.subspecies {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  width: 50%;
-}
-
-button {
-  background-color: #1e1e1e;
-  color: #ffffff;
-  border: 2px solid #ffffff;
-  padding: 8px 16px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: 0.3s;
-  white-space: nowrap;
-  width: auto;
-  min-width: 140px;
-  text-align: center;
-}
-
-button:hover {
-  background-color: #484848;
-  color: white;
-  border-color: white;
+    color: #9bf1e7;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
 }

@@ -1,43 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kyvera</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyvera Anatomy</title>
 
-  <link rel="icon" href="../favicons/minty_favicons/favicon-32x32.png" type="image/x-icon" />
-  <link rel="stylesheet" href="../css/style.css" />
-  <script src="../JS/index.js"></script>
+    <meta property="og:type" content="website" />
+    <meta name="author" content="Katari Kityama">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
-
-<!-- Kat and Ant made this uwu :3 -->
-<!-- Kat is going to rework this page a bit. I need to integrate NAV tags into our navigation for SEO reasons and I want to reorganize button locations. -->
-<!-- validator.w3.org may be a helpful debug tool -->
-<!-- Search engines prefer code that passes the validator.w3.org checks! -->
-<!-- Use a content id tag with a div to center and set a max width for the entire page -->
-
 <body>
-  <div class="home-container">
-    <div class="title">Kyvera</div>
-    <div class="divider"></div>
+    <nav></nav> <!-- Just here for crawlers, at least for now -->
+    <div id="content">
 
-    <div class="link-container">
-      <div class="info1">
-        <button onclick="location.href='html/mintykat.html'">Minty-kat family</button>
-        <button onclick="location.href='html/lore.html'">Lore</button>
-        <button onclick="location.href='https://discord.gg/QPZQGFu5QG'">Discord</button>
-        <button onclick="location.href='html/devs.html'">Devs</button>
-      </div>
+        <div class="upperleft"> 
+            <h1>KYVERA ANATOMY</h1>
+        </div>
 
-      <div class="subspecies">
-        <button onclick="location.href='subspecies.html'">Subspecies</button>
-        <button onclick="location.href='filler1.html'">Filler</button>
-        <button onclick="location.href='filler2.html'">Filler</button>
-        <button onclick="location.href='filler3.html'">Filler</button>
-        <button onclick="location.href='filler4.html'">Filler</button>
-        <button onclick="location.href='filler5.html'">Filler</button>
-      </div>
+        <div class="upperright"> <!-- for the future -->
+        </div>
+
+        <div class="left" id="kyvera_anatomy_lore"> 
+            <h2>Anatomical Website in Development</h2>
+            <p>This website is in it's very early devopment. Many images, elements, and lore will be added in the future. Consider this an early access / alpha.</p>
+            <p>You can click on the placeholder kyvera image to read about the species anatomical lore, but at this moment only the head has its lore even partially written out.</p>
+        </div> 
+
+        <div class="vertical_divider"></div>
+        
+        <div class="right">
+            <div class="kyvera_container">
+                <img src="images/kyveraSketch.png" alt="Kyvera Sketch" id="kyvera_image" />
+                <div id="detectors">
+                    <div id="head" data_part="head" class="kyvera_image_button"></div>
+                    <div id="paw_r" data_part="paws" class="kyvera_image_button"></div>
+                    <div id="paw_l" data_part="paws" class="kyvera_image_button"></div>
+                    <div id="chest" data_part="chest" class="kyvera_image_button"></div>
+                    <div id="leg_r" data_part="legs" class="kyvera_image_button"></div>
+                    <div id="leg_l" data_part="legs" class="kyvera_image_button"></div>
+                    <div id="tail" data_part="tail" class="kyvera_image_button"></div>
+                    <div id="hip" data_part="hip" class="kyvera_image_button"></div>
+                    <div id="hand_r" data_part="hands" class="kyvera_image_button"></div>
+                    <div id="hand_l" data_part="hands" class="kyvera_image_button"></div>
+                    <div id="tail_tip" data_part="tail_tip" class="kyvera_image_button"></div>
+                </div>
+            </div>
+            <p>Click on the kyvera.</p>
+        </div>
+
     </div>
-  </div>
+    <footer></footer>
+    <script src="javascript/script.js"></script>
 </body>
 </html>
