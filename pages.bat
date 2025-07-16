@@ -1,3 +1,4 @@
+echo on
 REM This file is for Kat! It's used to automate pushing files to the live website.
 
 REM Sync with REPO
@@ -33,3 +34,4 @@ set /p commentLIVE=Enter comment for gh-pages/live branch:
 git commit -m "%commentLIVE%"
 git push origin gh-pages --force
 git checkout main
+pause
