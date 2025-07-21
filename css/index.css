@@ -6,7 +6,7 @@
 
     display: grid;
     grid-template-columns: 60% 0.1% 40%;
-    grid-template-rows: 1fr 80% 1fr;
+    grid-template-rows: 10% 80% 10%;
 }
 
 .upperleft {
@@ -28,12 +28,16 @@ h1 {
 }
 
 .left {
-    padding: 0px 5% 0px 5%;
+    padding: 2.5% 5% 2.5% 5%;
     grid-column: 1;
     grid-row: 2;
+    overflow-y: auto;
+
+    scrollbar-width: thin; 
+    scrollbar-color: #20c1ae transparent; 
 }
 
-.vertical_divider {
+.divider {
     width: 100%;
     background-color: #20c1ae;
     margin: 0;
@@ -49,6 +53,7 @@ h1 {
     grid-row: 2;
     height: 100%;
     width: auto;
+    float: right;
 
     align-items: center;
     text-align: center;
@@ -135,4 +140,90 @@ h1 {
 #tail_tip {
     grid-column: 17/20;
     grid-row: 14/17;
+}
+
+.bottomleft {}
+
+.bottomright{
+    grid-column: 3;
+    grid-row: 3;
+    text-align: center;
+}
+
+/* Keeps the image where I want it for weird aspect ratios */
+@media (max-aspect-ratio: 13/9) {
+    .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+    }
+
+    .kyvera_container {
+        height: auto;
+        width: 100%;
+    }
+
+    #kyvera_image {
+        height: auto;
+        width: 100%;
+    }
+}
+
+/* Phone CSS */
+@media screen and (max-aspect-ratio: 1/1) {
+    #content {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 0fr 70% 5% 0.1% 80% 10%;
+    }
+
+    .upperright {
+        padding: 0px;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .left {
+        grid-column: 1;
+        grid-row: 6;
+    }
+
+    .divider {
+        grid-column: 1;
+        grid-row: 5;
+
+    }
+
+    .right {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .kyvera_container {
+        height: 100%;
+        width: auto;
+    }
+
+    #kyvera_image {
+        height: 100%;
+        width: auto;
+    }
+
+    .bottomright{
+        grid-column: 1;
+        grid-row: 4;
+        text-align: center;
+    }
+}
+
+/* Skinny phone CSS */
+@media screen and (max-aspect-ratio: 1/2) {
+    .kyvera_container {
+        height: auto;
+        width: 100%;
+    }
+
+    #kyvera_image {
+        height: auto;
+        width: 100%;
+    }
 }
