@@ -26,10 +26,12 @@ git reset --hard origin/main
 
 # branch cleanup before commit
 git rm pages.command
-git rm RepoSyncAll.bat
-git rm RepoSyncAll.command
+git rm commit.bat
+git rm commit.command
 git rm run.bat
 git rm run.command
+git rm sync.bat
+git rm sync.command
 
 git add .
 git rm .gitignore
