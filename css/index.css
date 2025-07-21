@@ -148,6 +148,9 @@ h1 {
     grid-column: 3;
     grid-row: 3;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;     
 }
 
 /* Keeps the image where I want it for weird aspect ratios */
